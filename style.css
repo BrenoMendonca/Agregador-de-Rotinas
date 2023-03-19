@@ -17,12 +17,13 @@ nav{
     justify-content: space-around;
     align-items: center;
     /* Definição de fonte (Opcional)*/
-    
     font-family: system-ui, -apple-system, 
     helvetica, Arial, Helvetica, 
     sans-serif ;
     background: #CD47FD;
     height: 8vh;
+    /* Definição de sombras (Opcional) */
+    box-shadow: 0 0.1rem 0.5rem #f1dbdb;
 }
 
 .nav-list {
@@ -38,3 +39,21 @@ main{
     background-color:#2F2F2F ;
     height: 92vh;
 }
+
+.home{
+    padding-top: 5%;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #CD47FD;
+}
+.home-text{
+    padding-left: 15%;
+}
+.home-img{
+    padding-right: 15%;
+    padding-bottom: 5%;
+}
+
