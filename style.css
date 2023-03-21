@@ -41,38 +41,42 @@ main{
 
 .home{
     padding-top: 5%;
-    width: 100%;
-    height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #CD47FD;
+    justify-content: space-around;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #CD47FD;
+    color:white;
+    height: 350px;
+    padding-bottom: 40px;
 }
-.home-text{
-    padding-left: 15%;
-    visibility: hidden;
+
+.home-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-.home-img{
-    padding-right: 15%;
-    padding-bottom: 5%;
+.text-1{
+    font-size: 54px;
 }
+
 .quem-somos{
-    padding-top: 5%;
-    width: 100%;
-    height: 50vh;
+    padding-top: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .quem-somos-text{
-    padding-right: 15%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     color: white;
 }
 .quem-somos-img{
-    padding-left: 15%;
+    padding-left: 10%;
     padding-bottom: 5%;
 }
 .Big-Numbers{
@@ -86,21 +90,53 @@ main{
     text-transform: uppercase;
     font-size:300%;
     color: white;
+    /* Para a função do On Reveal */
     visibility: hidden;
 }
 .Kanban{
     padding-top: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-.Kanban-text{
-    padding-right: 20%;
     color: white;
 }
-.Kanban-img{
-    padding-left: 15%;
-    padding-bottom: 5%;
+
+.Kanban-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
+
+.conteudo-principal-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 64px;
+}
+.botao-kanban{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color:#CD47FD;
+    color: white;
+    width: 161px;
+    height: 39px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.Pk-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.PlanningPoker{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+
