@@ -7,6 +7,11 @@ a:hover{
     opacity:0.7;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
 .logo {
     font-size: 24px;
     text-transform: uppercase;
@@ -21,7 +26,7 @@ nav{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #2F2F2F;
     height: 8vh;
-    /* Definição de sombras (Opcional) */
+    /* Definição de sombras (Opcional)*/ 
     box-shadow: 0 0.1rem 0.5rem #f1dbdb;
 }
 
@@ -33,6 +38,7 @@ nav{
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
 
 main{
     background-color:#2F2F2F ;
@@ -123,7 +129,9 @@ main{
     border-radius: 20px;
 
 }
-
+/*.kanban-img{
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+} */
 .Pk-principal{
     display: flex;
     flex-direction: column;
@@ -139,4 +147,31 @@ main{
     color: white;
 }
 
+
+.Reuniao{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-bottom: 10%;
+}
+
+.Reuniao-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200;
+    background-color: grey;
+}
 
