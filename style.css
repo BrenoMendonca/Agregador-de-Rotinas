@@ -11,7 +11,6 @@ a:hover{
     display: flex;
     justify-content: space-around;
 }
-
 nav{
     color: white;
     display:flex;
@@ -20,7 +19,7 @@ nav{
     /* Definição de fonte (Opcional)*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #2F2F2F;
-    height: 8vh;
+    height: 15vh;
     /* Definição de sombras (Opcional)*/ 
     box-shadow: 0 0.1rem 0.5rem #f1dbdb;
 }
