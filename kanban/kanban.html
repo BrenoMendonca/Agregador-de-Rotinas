@@ -13,20 +13,7 @@
         <h1 class="titulo-page">Kanban</h1>
     </header>
     <main class="box-cards">
-        <div class="card">
-            <div class="box-titulo-card">
-                <input class="titulo-card" type="text"/>
-                <button class="button-excluir-card">X</button>
-            </div>
-            <div class="box-tasks-card">
-                <div class="task">
-                    <p class="titulo-task">Titulo TEste</p>
-                    <button class="button-ver-task">X</button>
-                </div>
-            </div>
-            <div class="button-nova-task" onclick="addTask(event)">+ New Task</div>
-        </div>
-        <button class="button-novo-card" onclick="gerarNovoCard()">+</button>
+        <button class="button-novo-card" onclick="gerarNovoCard('',[],null)">+</button>
     </main>
 </body>
 </html>
