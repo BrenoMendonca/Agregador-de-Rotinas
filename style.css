@@ -171,12 +171,9 @@ svg{
 }
 
 footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 200;
+    
     background-color: grey;
 }
-
