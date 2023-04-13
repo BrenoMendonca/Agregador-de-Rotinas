@@ -32,3 +32,26 @@ nav{
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
+main{
+    background-color:#2F2F2F ;
+    height: 100%;
+}
+
+.breno{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #CD47FD;
+    color:white;
+    height: 350px;
+    padding-bottom: 40px;
+}
+
+
+.text-1{
+    font-size: 54px;
+}
+
