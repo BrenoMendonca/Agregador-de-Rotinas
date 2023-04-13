@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    opacity:0.7;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Definição de fonte (Opcional)*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #2F2F2F;
+    height: 15vh;
+    /* Definição de sombras (Opcional)*/ 
+    box-shadow: 0 0.1rem 0.5rem #f1dbdb;
+}
+
+.nav-list {
+    list-style: none;
+    display:flex
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+
+main{
+    background-color:#2F2F2F ;
+    height: 100%;
+}
+svg{
+    position: absolute;
+    right: 20vw;
+    z-index: 1;
+}
+.home-img{
+    z-index: 2;
+}
+.home{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #CD47FD;
+    color:white;
+    height: 350px;
+    padding-bottom: 40px;
+}
+.home-text{
+    z-index: 3;
+}
+
+.text-1{
+    font-size: 54px;
+}
+
+.quem-somos{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.quem-somos-text{
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.quem-somos-img{
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+.Big-Numbers{
+    padding-top: 5%;
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* Definição de fonte (Opcional)*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size:300%;
+    color: white;
+    /* Para a função do On Reveal */
+    visibility: hidden;
+    text-align: center;
+}
+.divisa-numbers{
+    height: 10vh;
+    width: 2px;
+    background-color: white;
+}
+.Kanban{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.Kanban-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.kanban-img{
+    box-shadow: rgba(205, 71, 253, 1) -5px 5px, rgba(205, 71, 253, 0.7) -10px 10px, rgba(205, 71, 253, 0.4) -15px 15px, rgba(205, 71, 253, 0.2) -20px 20px;
+}
+
+.conteudo-principal-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 64px;
+}
+.botao-kanban{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color:#CD47FD;
+    color: white;
+    width: 161px;
+    height: 39px;
+    border: none;
+    border-radius: 20px;
+
+}
+.Pk-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.PlanningPoker{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.pk-img{
+    box-shadow: rgba(205, 71, 253, 1) 5px 5px, rgba(205, 71, 253, 0.7) 10px 10px, rgba(205, 71, 253, 0.4) 15px 15px, rgba(205, 71, 253, 0.2) 20px 20px;
+}
+.Reuniao{
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-bottom: 10%;
+}
+
+.Reuniao-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200;
+    background-color: grey;
+}
+

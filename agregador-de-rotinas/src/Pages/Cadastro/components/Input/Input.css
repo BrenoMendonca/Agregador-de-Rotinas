@@ -1,0 +1,8 @@
+.input-form{
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 0vh 0vw 1vh 1vh;
+    border-bottom: 1px solid #989898;
+    outline: none;
+}

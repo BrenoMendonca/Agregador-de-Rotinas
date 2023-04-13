@@ -1,0 +1,13 @@
+.button-login-cadastro{
+    padding: 1vh 2vw;
+    font-size: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 5px;
+    color: white;
+    background-color: #CD47FD;
+}
+.button-login-cadastro:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+    cursor: pointer;
+}

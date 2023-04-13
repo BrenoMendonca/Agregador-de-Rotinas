@@ -1,0 +1,10 @@
+.box-reunioes{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vh 5vw;
+    gap: 5vw;
+}
