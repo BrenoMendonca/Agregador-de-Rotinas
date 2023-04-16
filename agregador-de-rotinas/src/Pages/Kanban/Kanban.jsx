@@ -11,16 +11,18 @@ export const KanbanPage = () =>{
        buscarCards()
     },[]);
 
-    async function buscarCards(){
-        await fetch(`https://api-trantor.vercel.app/v1/users/${params.id}`)
-        .then(response => response.json())  
-        .then(json =>{
-            setCards(json.kanban)
-        })   
-        .catch(err => console.log('Erro de solicitação', err)); 
-    }
+    async function buscarCards() {
+        try {
+          const response = await fetch(`https://api-trantor.vercel.app/v1/users/${params.id}`);
+          const json = await response.json();
+          setCards(json.kanban);
+        } catch (error) {
+          console.log('Erro de solicitação', error);
+        }
+      }
+
     const gerarCard = async () =>{
-        await salvarCard("",[],null, params.id)
+        await salvarCard("Novo Card",[],null, params.id)
         buscarCards()
     }
     const excluirCard = async (e) =>{

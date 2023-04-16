@@ -10,11 +10,6 @@ export const PageMenu = () =>{
 
     const opcoes = [
         {
-            iconeMenu: iconePk,
-            titulo:"Planning Poker",
-            redirect:"/planningpoker"
-        },
-        {
             iconeMenu: iconeKanban,
             titulo:"Kanban",
             redirect:`/kanban/${params.id}`
