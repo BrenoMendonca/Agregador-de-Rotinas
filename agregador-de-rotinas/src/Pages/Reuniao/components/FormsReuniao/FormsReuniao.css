@@ -1,0 +1,105 @@
+.form-reuniao{
+    position: absolute;
+    top: 2vh;
+    left: 30vw;
+    background-color: white;
+    width: 30vw;
+    height: fit-content;
+    padding: 5vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    border-radius: 5px;
+}
+.input{
+    border-bottom: solid 1px #989898;
+    width: 47%;
+    padding: .5vh 0vh .5vh .5vh;
+    outline: none;
+    font-family: 'Barlow', sans-serif;
+}
+.box-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.inp-descricao{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 35vh;
+    max-height: 35vh;
+    padding: .5vh 0vh 0vh .5vh;
+    outline: none;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    font-family: 'Barlow', sans-serif;
+}
+.box-input-equipe{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#input-equipe{
+    border-bottom: solid 1px #989898;
+    width: 70%;
+    padding: .5vh 0vh .5vh .5vh;
+    outline: none;
+    font-family: 'Barlow', sans-serif;
+}
+.button-add-equipe{
+    width: 25%;
+    background-color: #CD47FD;
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+}
+.box-equipe{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+    height: 15vh;
+    overflow: scroll;
+}
+.pessoa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 4vh;
+    background-color: #CD47FD;
+    border-radius: 5px;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+    font-family: 'Barlow', sans-serif;
+    font-size: .8rem;
+}
+.button-excluir-pessoa{
+    padding: .5vh 1vh;
+    border-radius: 5px;
+}
+.button-add-reuniao{
+    width: 100%;
+    padding: 2vh 0vw;
+    border-radius: 5px;
+    background-color: #47fd8a;
+    font-size: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+}
+.button-add-reuniao:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .5s;
+}
