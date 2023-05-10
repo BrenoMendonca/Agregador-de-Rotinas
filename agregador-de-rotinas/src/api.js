@@ -6,18 +6,33 @@ export async function BuscarUser(){
         })   
         .catch(err => console.log('Erro de solicitação', err)); 
 }
-export const salvarCard = async (tituloCard, TasksCard, idCard, idUser) => {
-    const body = {
-            card:{
+export const adicionarCard = async (tituloCard, TasksCard, idCard, idUser) => {
+    const body ={
                 "titulo": tituloCard,
                 "tasks": TasksCard,
-            },
-            idCard: idCard
-        }
-        await fetch(`https://api-trantor.vercel.app/v1/salvarkanban/${idUser}`, {
+            }
+        await fetch(`http://localhost:3030/v1/adicionarcard/${idUser}`, {
             method: "POST",
             body: JSON.stringify(body),
             headers: {"Content-type": "application/json; charset=UTF-8"}
+          })
+            .then(response => response.json()) 
+            .then(json => console.log(json))
+            .catch(err => console.log(err))
+}
+
+export const editarCard = async (tituloCard, TasksCard, idCard, idUser) => {
+    const body = {
+            "card":{
+                "titulo": tituloCard,
+                "tasks": TasksCard,
+            },
+            "idCard": idCard
+        }
+        await fetch(`https://api-trantor.vercel.app/v1/editarcard/${idUser}`, {
+            method: "PUT",
+            body: JSON.stringify(body),
+            headers: {"Content-type": "application/json; charset=UTF-8","Accept": "*/*"}
           })
             .then(response => response.json()) 
             .then(json => console.log(json))

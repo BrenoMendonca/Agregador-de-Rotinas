@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Task } from '../Task/Task.jsx'
-import { salvarCard } from "../../../../api.js"
+import { editarCard } from "../../../../api.js"
 import './Card.css'
+import { useParams } from 'react-router-dom'
 export const Card = ({cardJson, excluirCard}) =>{
+    const params = useParams()
     const [jsonCard, setJsonCard] = useState(cardJson)
     const [input, setInput] = useState(false)
     
@@ -18,7 +20,7 @@ export const Card = ({cardJson, excluirCard}) =>{
             tasks: newTasks
         }
         setJsonCard(cardAtualizado)
-        salvarCard(cardAtualizado.titulo,cardAtualizado.tasks,cardAtualizado._id)
+        editarCard(cardAtualizado.titulo,cardAtualizado.tasks,cardAtualizado._id, params.id)
     }
     const adicionarTask = (e) =>{
         const novaTask = e.target.parentElement.children[0].value
@@ -29,7 +31,7 @@ export const Card = ({cardJson, excluirCard}) =>{
             tasks: newTasks
         }
         setJsonCard(cardAtualizado)
-        salvarCard(cardAtualizado.titulo,cardAtualizado.tasks,cardAtualizado._id)
+        editarCard(cardAtualizado.titulo,cardAtualizado.tasks,cardAtualizado._id, params.id)
         setInput(!input)
     }
     return(
@@ -40,7 +42,7 @@ export const Card = ({cardJson, excluirCard}) =>{
             </div>
             <div className="box-tasks-card">
             {jsonCard.tasks.map(task =>
-                   <Task titulo={task} excluirTask={excluirTask}/>
+                   <Task titulo={task} excluirTask={excluirTask} key={task}/>
                 )}
             </div>
             {!input &&(

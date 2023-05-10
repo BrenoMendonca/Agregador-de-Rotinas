@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react"
-import { salvarCard, deletarCard } from "../../api.js"
+import { adicionarCard, deletarCard } from "../../api.js"
 import { Card } from "./components/Card/Card.jsx"
 import './Kanban.css';
 import { useParams } from "react-router-dom";
@@ -22,7 +22,7 @@ export const KanbanPage = () =>{
       }
 
     const gerarCard = async () =>{
-        await salvarCard("Novo Card",[],null, params.id)
+        await adicionarCard("Novo Card",[], null, params.id)
         buscarCards()
     }
     const excluirCard = async (e) =>{
@@ -33,7 +33,7 @@ export const KanbanPage = () =>{
     return(
         <main className="box-cards">
             {cards != "" && cards.map(card =>
-                <Card cardJson={card} key={card.id} excluirCard={excluirCard}/>
+                <Card cardJson={card} key={card.id} excluirCard={excluirCard} idUser={params.id} />
             )}
             <button className="button-novo-card" onClick={gerarCard}>+</button>
         </main>

@@ -54,7 +54,7 @@ export const PageReuniao = () =>{
             </main>
             <button className='button-input-reuniao' onClick={() => setInputForms(!inputForms)}>Adicionar Reunião</button>
             {inputForms &&
-                <FormsReuniao enviarForms={adicionarReuniao} />
+                <FormsReuniao enviarForms={adicionarReuniao}/>
             }
         </>
     )
