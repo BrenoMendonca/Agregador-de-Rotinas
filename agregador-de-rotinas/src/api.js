@@ -11,7 +11,7 @@ export const adicionarCard = async (tituloCard, TasksCard, idCard, idUser) => {
                 "titulo": tituloCard,
                 "tasks": TasksCard,
             }
-        await fetch(`http://localhost:3030/v1/adicionarcard/${idUser}`, {
+        await fetch(`https://api-trantor.vercel.app/v1/adicionarcard/${idUser}`, {
             method: "POST",
             body: JSON.stringify(body),
             headers: {"Content-type": "application/json; charset=UTF-8"}

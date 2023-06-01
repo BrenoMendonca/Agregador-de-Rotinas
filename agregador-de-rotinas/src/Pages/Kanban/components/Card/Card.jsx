@@ -34,10 +34,15 @@ export const Card = ({cardJson, excluirCard}) =>{
         editarCard(cardAtualizado.titulo,cardAtualizado.tasks,cardAtualizado._id, params.id)
         setInput(!input)
     }
+    const salvarTitulo = (e) => {
+        const novoTitulo = e.target.value
+        const cardAtulizado = { ...jsonCard, titulo: novoTitulo }
+        setJsonCard(cardAtulizado)
+      }
     return(
         <div className="card">
             <div className="box-titulo-card">
-                <input className="titulo-card" type='text' />
+                <input className="titulo-card" type='text' placeholder={jsonCard.titulo} onBlur={salvarTitulo}/>
                 <button className="button-excluir-card" value={cardJson._id} onClick={excluirCard}>X</button>
             </div>
             <div className="box-tasks-card">

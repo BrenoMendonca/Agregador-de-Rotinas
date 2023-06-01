@@ -1,13 +1,30 @@
-.button-login-cadastro{
-    padding: 1vh 2vw;
-    font-size: 1.5rem;
-    font-family: 'Barlow', sans-serif;
-    border-radius: 5px;
-    color: white;
-    background-color: #CD47FD;
+@media screen and (max-width:600px) {
+    .button-login-cadastro{
+        padding: 2vw 2vw;
+        font-size: 2rem;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 5px;
+        color: white;
+        background-color: #CD47FD;
+    }
+    .button-login-cadastro:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+        cursor: pointer;
+    }
 }
-.button-login-cadastro:hover{
-    transform: scale(1.1);
-    transition: all .5s;
-    cursor: pointer;
+@media screen and (min-width:900px) {
+    .button-login-cadastro{
+        padding: 1vw 1vw;
+        font-size: 1.4rem;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 5px;
+        color: white;
+        background-color: #CD47FD;
+    }
+    .button-login-cadastro:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+        cursor: pointer;
+    }
 }

@@ -1,36 +1,129 @@
-.card-reuniao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-    height: 30vh;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    font-family: 'Barlow', sans-serif;
-    padding: 2vh 2vh;
+@media screen and (max-width:600px) {
+    .card-reuniao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        height: 30vh;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        font-family: 'Barlow', sans-serif;
+        padding: 2vh 2vh;
+    }
+    .box-titulo-reuniao, .box-data-button{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .data-reuniao{
+        color: #CD47FD;
+    }
+    .button-excluir-reuniao, .button-saiba-mais{
+        font-family: 'Barlow', sans-serif;
+        background-color: #CD47FD;
+        padding: 1vh 2vh;
+        border-radius: 5px;
+        color: white;
+    }
+    .titulo-reuniao{
+        font-size: 1.3rem;
+    }
+    .tipo-reuniao{
+        font-size: .8rem;
+        color: #989898;
+    }
+    .box-equipe-card{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        font-size: .9rem;
+    }
+    .lider-equipe-card{
+        background-color: #CD47FD;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1vh 0vh;
+    }
+    .pessoa-equipe-card{
+        background-color: #e4e4e4;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1vh 0vh;
+    }
+    .box-equipe-descricao{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+    }
 }
-.box-titulo-reuniao, .box-data-button{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.data-reuniao{
-    color: #CD47FD;
-}
-.button-excluir-reuniao, .button-saiba-mais{
-    font-family: 'Barlow', sans-serif;
-    background-color: #CD47FD;
-    padding: 1vh 2vh;
-    border-radius: 5px;
-    color: white;
-}
-.titulo-reuniao{
-    font-size: 1.3rem;
-}
-.tipo-reuniao{
-    font-size: .8rem;
-    color: #989898;
+@media screen and (min-width:900px) {
+    .card-reuniao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 30%;
+        height: fit-content;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        font-family: 'Barlow', sans-serif;
+        padding: 2vh 4vh;
+        gap: 2vh;
+    }
+    .box-titulo-reuniao, .box-data-button{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .data-reuniao{
+        color: #CD47FD;
+    }
+    .button-excluir-reuniao, .button-saiba-mais{
+        font-family: 'Barlow', sans-serif;
+        background-color: #CD47FD;
+        padding: 1vh 2vh;
+        border-radius: 5px;
+        color: white;
+    }
+    .titulo-reuniao{
+        font-size: 1.3rem;
+    }
+    .tipo-reuniao{
+        font-size: .8rem;
+        color: #989898;
+    }
+    .box-equipe-card{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        font-size: .9rem;
+    }
+    .lider-equipe-card{
+        background-color: #CD47FD;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1vh 0vh;
+    }
+    .pessoa-equipe-card{
+        background-color: #e4e4e4;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1vh 0vh;
+    }
+    .box-equipe-descricao{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+    }
 }
